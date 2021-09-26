@@ -1,0 +1,348 @@
+/** Fonts **/
+@font-face {
+  font-family: "Minecraft Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minecraft Regular"),
+    url("../fonts/1_MinecraftRegular1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minecraft Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minecraft Italic"),
+    url("../fonts/2_MinecraftItalic1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minecraft Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minecraft Bold"),
+    url("../fonts/3_MinecraftBold1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minecraft Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Minecraft Bold Italic"),
+    url("../fonts/4_MinecraftBoldItalic1.woff") format("woff");
+}
+
+/** Font Settings **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Minecraft Bold";
+}
+
+p,
+div,
+span {
+  font-family: "VT323";
+}
+
+/************* Styles *************/
+
+* {
+  transition: all 0.5s;
+}
+
+/** Scrollbar **/
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #ff0000 0%, #000000 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(180deg, #ff0000 0%, #3f3f3f 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+}
+
+/******* Base Styles ******/
+
+/** Navbar **/
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img:hover,
+.navbar-brand img:focus {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+b#compnavtext {
+  font-size: 1.5em;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+b#compnavtext:hover,
+b#compnavtext:focus {
+  font-weight: 700;
+}
+
+#compnavbtn {
+  font-size: 1.5em !important;
+}
+
+/******/
+
+header {
+  background-image: url(../images/bg1.png);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+#header {
+  text-align: center;
+  padding-top: 37.5vh;
+  text-shadow: 2px 2px 0px rgb(58, 58, 58);
+  color: rgb(0, 0, 0);
+}
+
+#header h1 {
+  font-size: 4.5em !important;
+}
+
+#header b {
+  color: rgb(214, 0, 0);
+}
+
+#headerbtns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.dropdown-menu .dropdown-item {
+  text-shadow: none !important;
+}
+
+#headerbtn1 a,
+#headerbtn2 a {
+  font-size: 2.5em !important;
+  padding: 5px 30px 5px 30px;
+}
+
+#header .dropdown-menu .dropdown-item {
+  font-size: 1.5em !important;
+}
+
+#hr1 {
+  height: 20px;
+  color: rgb(214, 0, 0);
+  opacity: 1;
+  margin-top: -30px;
+}
+/** About **/
+
+#about {
+  margin-top: -25px;
+  padding-top: 10vh;
+  height: 70vh;
+  background-image: url(../images/bg2.jpg);
+}
+
+#about-text {
+  font-size: 32px;
+  margin-top: 25px;
+  padding: 50px;
+  background-color: rgba(175, 175, 175, .6);
+  box-shadow: 0px 0px 12px 12px rgba(114, 114, 114, 0.315);
+}
+
+/** Gallery **/
+
+#gallery {
+  padding-top: 10vh;
+  height: 150vh;
+  background-color: #3f3f3f;
+  color: rgb(207, 207, 207);
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+  overflow: hidden;
+}
+
+#carouselExampleCaptions {
+  padding: 50px;
+  width: 1200px;
+  height: 600px;
+}
+
+div#comparison { 
+  margin-top: 50px;
+  width: 80vw;
+  height: 60vw;
+  max-width: 1050px;
+  max-height: 600px;
+  overflow: hidden; }
+div#comparison figure { 
+  background-image: url(../images/slider-b.png); 
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+}
+div#comparison figure > img { 
+  position: relative;
+  width: 100%;
+}
+div#comparison figure div { 
+  background-image: url(../images/slider-a.png);
+  background-size: cover;
+  position: absolute;
+  width: 50%; 
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+
+input[type=range]{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  position: relative;
+  top: -1rem;
+  left: -2%;
+  background-color: rgb(255, 255, 255);
+  width: 102%; 
+}
+input[type=range]:focus { 
+  outline: none; 
+}
+input[type=range]:active { 
+  outline: none;  
+}
+
+input[type=range]::-moz-range-track { 
+  -moz-appearance:none;
+    height:15px;
+    width: 98%;
+    background-color: rgba(160, 23, 23, .8); 
+    position: relative;
+    outline: none;    
+ }
+input[type=range]::active { 
+  border: none; 
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width: 20px; height: 15px;   
+    background: rgb(161, 34, 34);
+    border-radius: 0;
+   }
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 30px;
+  height: 15px;
+  background: rgb(177, 29, 29);
+  border-radius: 0;
+     }   
+input[type=range]:focus::-webkit-slider-thumb {
+    background: rgba(94, 6, 6, 0.5);
+   }
+input[type=range]:focus::-moz-range-thumb {
+    background: rgba(94, 6, 6, 0.5);
+   }
+
+   #comparison-container {
+     margin-top: 2vh;
+   }
+
+/** Versions **/
+
+#versions {
+  background-color: #a8a8a8;
+  background-image: url(../images/bg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#versions h1 {
+  padding-top: 10vh;
+  margin-bottom: 5vh;
+  color:#a40808;
+  text-shadow: 2px 2px 0px rgb(90, 0, 0);
+}
+
+#versions div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+table.redTable {
+  border: 4px solid rgb(65, 65, 65);
+  background-color: #9e9e9e;
+  text-align: center;
+  width: 80%;
+  border-collapse: collapse;
+}
+table.redTable td,
+table.redTable th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 20px;
+}
+table.redTable tr:nth-child(even) {
+  background: #ee4f4f;
+}
+table.redTable thead {
+  background: #ca2626;
+}
+table.redTable thead th {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #a40808;
+}
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #a40808;
+}
+table.redTable tfoot td {
+  font-size: 13px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a {
+  display: inline-block;
+  background: #ffffff;
+  color: #a40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
